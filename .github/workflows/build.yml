@@ -10,4 +10,4 @@ jobs:
     - name: Setup MSBuild.exe
       uses: warrenbuckley/Setup-MSBuild@v1
     - name: MSBuild
-      run: msbuild terminal.csproj
+      run: msbuild terminal.sln
