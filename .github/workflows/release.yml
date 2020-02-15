@@ -14,10 +14,13 @@ jobs:
       - name: Setup MSBuild.exe
         uses: warrenbuckley/Setup-MSBuild@v1
       - name: Build and Zip
-        run: |
-          msbuild terminal.sln /t:Build /p:Configuration=Release
-          zip ter-x86.zip .\bin\x86\Release\ter.exe
-          zip ter-x64.zip .\bin\x64\Release\ter.exe
+        run: msbuild terminal.sln /t:Build /p:Configuration=Release
+      - uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -qq .\ter-x86.zip .\bin\x86\Release\ter.exe
+      - uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -qq .\ter-x64.zip .\bin\x64\Release\ter.exe  
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
