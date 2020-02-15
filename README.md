@@ -4,9 +4,11 @@ Small exe project that runs the new [Windows Terminal](https://www.microsoft.com
 ## Why?
 Lazy workaround for [this issue](https://github.com/microsoft/terminal/issues/4581#issuecomment-586143658)
 
-## Building
+## Downloading
 
-I haven't configured any releases yet so for now this project has to be locally built to get the exe
+See [Releases](https://github.com/sharunkumar/ter/releases)
+
+## Building
 
 1. Clone the project: ```git clone https://github.com/sharunkumar/terminal.git```
 2. Open terminal.sln in Visual Studio
