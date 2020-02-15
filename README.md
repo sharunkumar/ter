@@ -2,7 +2,7 @@
 Small exe project that runs the new [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) in the current directory this exe is started at
 
 ## Why?
-Lazy workaround for [this issue](https://github.com/microsoft/terminal/issues/4581#issuecomment-586143658)
+Lazy workaround for [this issue](https://github.com/microsoft/terminal/issues/4581)
 
 ## Downloading
 
