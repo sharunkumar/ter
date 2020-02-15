@@ -14,7 +14,7 @@ jobs:
       - name: Setup MSBuild.exe
         uses: warrenbuckley/Setup-MSBuild@v1
       - name: Build and Zip
-        run: msbuild terminal.sln /t:Build /p:Configuration=Release|x86
+        run: msbuild terminal.sln /t:Build /p:Configuration=Release /p:Platform=x86
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
