@@ -15,12 +15,6 @@ jobs:
         uses: warrenbuckley/Setup-MSBuild@v1
       - name: Build and Zip
         run: msbuild terminal.sln /t:Build /p:Configuration=Release
-      - uses: montudor/action-zip@v0.1.0
-        with:
-          args: zip -qq .\ter-x86.zip .\bin\x86\Release\ter.exe
-      - uses: montudor/action-zip@v0.1.0
-        with:
-          args: zip -qq .\ter-x64.zip .\bin\x64\Release\ter.exe  
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -38,9 +32,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: .\ter-x86.zip
-          asset_name: ter-x86.zip
-          asset_content_type: application/zip
+          asset_path: .\bin\x86\Release\ter.exe
+          asset_name: ter-x86.exe
+          asset_content_type: application/exe
       - name: Upload Release Asset (x64)
         id: upload-release-asset-2 
         uses: actions/upload-release-asset@v1
@@ -48,6 +42,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: .\ter-x64.zip
-          asset_name: ter-x64.zip
-          asset_content_type: application/zip  
+          asset_path: .\bin\x64\Release\ter.exe  
+          asset_name: ter-x64.exe
+          asset_content_type: application/exe
