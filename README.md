@@ -1,4 +1,4 @@
-# terminal (ter.exe)
+# ter.exe
 Small exe project that runs the new [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) in the current directory this exe is started at
 
 ## Why?
