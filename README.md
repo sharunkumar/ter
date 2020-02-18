@@ -6,7 +6,7 @@ Lazy workaround for [this issue](https://github.com/microsoft/terminal/issues/45
 
 ## Downloading
 
-See [Releases](https://github.com/sharunkumar/ter/releases)
+Download the latest [ter.exe](https://github.com/sharunkumar/ter/releases/latest/download/ter.exe)
 
 ## Building
 
