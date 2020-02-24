@@ -21,4 +21,4 @@ Download the latest [ter.exe](https://github.com/sharunkumar/ter/releases/latest
   If you have [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) installed, there would be a wt.exe in this same folder
 2. Now you can launch wt.exe by typing `ter` in the address bar in Windows Explorer and windows terminal would open with the same folder that you are currently in.
 
-Note: You would need to add `C:\Users\<username>\AppData\Local\Microsoft\WindowsApps\` to your PATH evnironment variable.
+Note: You would need to add `%USERPROFILE%\AppData\Local\Microsoft\WindowsApps` to your PATH evnironment variable.
