@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("terminal")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ter")]
+[assembly: AssemblyDescription("Utility to launch the new windows terminal in the current directory")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("terminal")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyProduct("ter")]
+[assembly: AssemblyCopyright("Copyright © 2020 sharunkumar")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
